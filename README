@@ -1,0 +1,31 @@
+Documentation
+-------------
+
+This project contains an echo server and an asynchronous client 
+both written in C, used to send echo messages to the echo server.
+The client uses the time elapse between the sent and received 
+messages to compute the:
+1. Round trip time for each echo message.
+2. Average round trip time.
+3. Throughput rate for all messages.
+
+Tests written in Python are supplied to test the Client and Server 
+for your system.
+
+Compiling:
+Just type "make" in the directory where the makefile is.
+
+Running the server:
+Usage: server <Server Port>
+Example: ./server 5000
+to start the server listening on port 5000.
+
+Running the client:
+Usage: client <Server Address> <Repeat times> [<Server Port>]
+Example: ./client 127.0.0.1 5 5000
+to start the client and send 5 echo messages to port 5000 of 
+the localhost. If port is not supplied it is set to the
+default echo port of 7.
+
+Running the tests:
+python ./tests.py
