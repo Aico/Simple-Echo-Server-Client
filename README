@@ -29,3 +29,5 @@ default echo port of 7.
 
 Running the tests:
 python ./tests.py
+
+Author: Kenneth Chik  Email: kenneth.chik@gmail.com
